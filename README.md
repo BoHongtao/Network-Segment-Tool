@@ -10,6 +10,7 @@ from IPy import IP<br/>
 IP('192.168.1.0/24') in IP('192.168.0.0/32')<br/>
 # 区分内外网函数
 这里传递的是网段，然后从网段中取出任意一个ip来判断
+```
     from IPy import IP
     def is_trust(ip_mask):
     ips = IP(ip_mask)
@@ -32,4 +33,5 @@ IP('192.168.1.0/24') in IP('192.168.0.0/32')<br/>
     else:
     return False
     print(is_trust('222.175.113.226/32'))
+```
 
